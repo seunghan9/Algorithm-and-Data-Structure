@@ -12,20 +12,28 @@
     <ClCompile Include="Main.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="ConsoleHelper.cpp" />
     <ClCompile Include="pch.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="Board.cpp" />
+    <ClCompile Include="Board.cpp">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleHelper.cpp">
+      <Filter>Board</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ConsoleHelper.h" />
     <ClInclude Include="pch.h">
       <Filter>Main</Filter>
     </ClInclude>
     <ClInclude Include="Type.h">
       <Filter>Main</Filter>
     </ClInclude>
-    <ClInclude Include="Board.h" />
+    <ClInclude Include="Board.h">
+      <Filter>Board</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleHelper.h">
+      <Filter>Board</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
