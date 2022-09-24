@@ -5,6 +5,7 @@ void ConsoleHelper::SetConsoleCursorPosition(int32 x, int32 y)
 {
 	HANDLE output = ::GetStdHandle(STD_OUTPUT_HANDLE);
 	COORD pos = { static_cast<short>(x),static_cast<short>(y) };
+	::SetConsoleCursorPosition(output, pos);
 }
 
 void ConsoleHelper::SetCursorColor(ConsoleColor Color)
