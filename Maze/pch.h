@@ -38,6 +38,14 @@ struct Pos
 
 	int32 y = 0;
 	int32 x = 0;
+	Pos() {};
+
+	Pos(int32 _x, int32 _y)
+	{
+		x = _x;
+		y = _y;
+	}
+
 };
 
 

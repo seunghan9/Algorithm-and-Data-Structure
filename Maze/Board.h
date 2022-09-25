@@ -1,5 +1,8 @@
 #pragma once
 #include "ConsoleHelper.h"
+#include "pch.h"
+
+class Player;
 
 enum
 {
@@ -19,15 +22,20 @@ public:
 	Board();
 	~Board();
 
-	void Init(int32 size);
+	void Init(int32 size, Player* player);
 	void Render();
 
 	void GenerateMap();
 	TileType GetTileType(Pos pos);
 	ConsoleColor GetTileColor(Pos pos);
 
+
+	Pos GetEnterPos();
+	Pos GetExitPos();
+
 private:
 	TileType _tile[BOARD_MAX_SIZE][BOARD_MAX_SIZE] = {};
 	int32 _size = 0;
+	Player* _player = nullptr;
 };
 
