@@ -18,7 +18,7 @@ enum class TileType
 
 class Board
 {
-public:
+public:	
 	Board();
 	~Board();
 

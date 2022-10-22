@@ -11,9 +11,9 @@ int main()
 {
 	::srand(static_cast<unsigned>(time(nullptr)));
 
+	
 	board.Init(25, &player);
 	player.Init(&board);
-	
 	uint64 lastTick = 0;
 	while (true)
 	{
@@ -26,7 +26,8 @@ int main()
 #pragma endregion
 
 		// 입력
-
+		player.Update(deltaTick);
+		
 		// 로직
 
 		// 렌더링
